@@ -1,13 +1,14 @@
 package ru.netology.Poster;
-public class PosterList {
-    private String[] movies = new String[0]; // менеджер не содержит фильмы после создания
-    private int defaultCountMovie; // значение количества фильмов по умолчанию
 
-    public PosterList(int defaultCountMovie) { // конструктор с изменяемым количеством фильмов
+public class PosterList {
+    private String[] movies = new String[0]; // нет фильмов после создания
+    private final int defaultCountMovie; // количество фильмов по умолчанию
+
+    public PosterList(int defaultCountMovie) {
         this.defaultCountMovie = defaultCountMovie;
     }
 
-    public PosterList() { // конструктор со значением количества фильмов по умолчанию
+    public PosterList() {
         this.defaultCountMovie = 10;
     }
 
